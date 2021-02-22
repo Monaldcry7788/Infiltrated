@@ -28,7 +28,7 @@ You can see settings and edit them inside your Exiled config.
 
 | Name  | Type | Description | 
 | ------------- | ------------- | ------------- |
-| IsEnabled  | bool  | Enable or Disale the plugin |
+| IsEnabled  | bool  | Enable or Disable the plugin |
 | InfiltratedItem  | int  | The items Infiltrated spawn with |
 | ClassDAnnounceDuration  | ushort | The duration of the ClassD spawn broadcast |
 | ClassDAnnounceMessage  | string  | The message to broadcast to all ClassD |
