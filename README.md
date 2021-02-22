@@ -44,8 +44,8 @@ You can see settings and edit them inside your Exiled config.
 
 | Commands  | Args | Permission | Description | 
 | ------------- | ------------- | ------------- | ------------- |
-| Infiltrated_spawn / ISpawn  | <player name>/<player id>  | infiltrated.spawn | Spawn Infiltrated |
+| Infiltrated_spawn / ISpawn  | Player name or ID  | infiltrated.spawn | Spawn Infiltrated |
 | Infiltrated_list / IList  | none  | infiltrated.list | Show the list of alive infiltrated |
-| Infiltrated_kill / IKill  | <player name>/<player id> | infiltrated.kill | Kill alive infiltrated |
+| Infiltrated_kill / IKill  | Player name or ID | infiltrated.kill | Kill alive infiltrated |
 
 If you found bug please contact me on discord: **Twitch.tv/Monaldcry7788#9248** .<br /><br />
