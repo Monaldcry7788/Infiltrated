@@ -24,7 +24,7 @@ namespace Infiltrated.Commands
                     var player = Exiled.API.Features.Player.Get(target);
                     if (!player.IsScp && !player.IsDead && !Infiltrated.Instance.infiltrated.Contains(player.Id))
                     {
-                        response = "Player " + player.Nickname + "has become Infiltrated";
+                        response = "Player " + player.Nickname + " has become Infiltrated";
                         Events.ClassDSpawn(player);
                         Infiltrated.Instance.infiltrated.Add(player.Id);
                         return false;
