@@ -29,16 +29,12 @@ You can see settings and edit them inside your Exiled config.
 | Name  | Type | Description | 
 | ------------- | ------------- | ------------- |
 | IsEnabled  | bool  | Enable or Disable the plugin |
-| InfiltratedItem  | int  | The items Infiltrated spawn with |
-| ClassDAnnounceDuration  | ushort | The duration of the ClassD spawn broadcast |
-| ClassDAnnounceMessage  | string  | The message to broadcast to all ClassD |
+| InfiltratedItems  | int  | The items Infiltrated spawn with |
+| ClassDBroadcast  | Broadcast  | The broadcast to all ClassD |
 | ClassDSpawnTime  | float  | How soon to spawn Infiltrated after round start  |
-| InfiltratedBroadcastMessage  | string  | The message to broadcast to Infiltrated ClassD  |
-| InfiltratedBroadCastDuration  | ushort  | The duration of the Infiltrated ClassD broadcast  |
-| HealtAmount  | int | Healt amount of Infiltrated ClassD  |
-| IsEnabledDeathAnnounceInfiltrated  | bool | Enable or disable death broadcast of Infiltrated Enable or disable death broadcast of Infiltrated |
-| InfiltratedBroadcastDeath  | string | The message to broadcast when Infiltrated death |
-| InfiltratedDeathAnnounceDuration | ushort | The duration of the Infiltrated death broadcast |
+| InfiltratedBroadcast  | Broadcast  | The broadcast to Infiltrated ClassD  |
+| HealthAmount  | int | Healt amount of Infiltrated ClassD  |
+| InfiltratedBroadcastDeath  | Broadcast | The broadcast when Infiltrated death |
 
 **Commands**
 
