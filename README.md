@@ -29,7 +29,7 @@ You can see settings and edit them inside your Exiled config.
 | Name  | Type | Description | 
 | ------------- | ------------- | ------------- |
 | IsEnabled  | bool  | Enable or Disable the plugin |
-| InfiltratedItems  | int  | The items Infiltrated spawn with |
+| InfiltratedItems  | List  | The items Infiltrated spawn with |
 | ClassDBroadcast  | Broadcast  | The broadcast to all ClassD |
 | ClassDSpawnTime  | float  | How soon to spawn Infiltrated after round start  |
 | InfiltratedBroadcast  | Broadcast  | The broadcast to Infiltrated ClassD  |
