@@ -33,7 +33,7 @@ You can see settings and edit them inside your Exiled config.
 | ClassDBroadcast  | Broadcast  | The broadcast to all ClassD |
 | ClassDSpawnTime  | float  | How soon to spawn Infiltrated after round start  |
 | InfiltratedBroadcast  | Broadcast  | The broadcast to Infiltrated ClassD  |
-| HealthAmount  | int | Healt amount of Infiltrated ClassD  |
+| HealthAmount  | int | Health amount of Infiltrated ClassD  |
 | InfiltratedBroadcastDeath  | Broadcast | The broadcast when Infiltrated death |
 
 **Commands**
