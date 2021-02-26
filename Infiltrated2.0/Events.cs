@@ -10,15 +10,12 @@ namespace Infiltrated
     {
         public System.Random Rand = new System.Random();
         private readonly Infiltrated plugin;
-        private readonly Logic logic;
+  
         public Events(Infiltrated plugin) => this.plugin = plugin;
-        public Events(Logic logic) => this.logic = logic;
 
         public void OnRoundStart()
         {
             plugin.TrackedPlayers.Clear();
-            Timing.CallDelayed(2.0f, () =>
-            {
                 foreach (Player player in Player.List)
                 {
                     if (player.Role == RoleType.ClassD)
@@ -26,8 +23,8 @@ namespace Infiltrated
                         player.Broadcast(Infiltrated.Singleton.Config.ClassDBroadcast.Duration, Infiltrated.Singleton.Config.ClassDBroadcast.Content.Replace("{seconds}", Infiltrated.Singleton.Config.ClassDSpawnTime.ToString()));
                     }
                 }
-            });
-            Timing.CallDelayed(plugin.Config.ClassDSpawnTime, () => logic.ChooseClassD());
+  
+            Timing.CallDelayed(plugin.Config.ClassDSpawnTime, () => Logic.ChooseClassD());
         }
         public void OnDied(DiedEventArgs ev)
         {
