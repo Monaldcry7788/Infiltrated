@@ -16,6 +16,7 @@ This is the list of Infiltrated features::
 - **List command:** You can view list of alive infiltrated.
 - **RandomSpawn Command**: You can spawn a random Infiltrated.
 - **PlayerInfo Command**: You can view info of player.
+- **Help Command**: You can view list and description of commands
 
 ### Required: 
 - Exiled 2.1.35
