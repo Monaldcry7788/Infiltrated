@@ -14,11 +14,17 @@ This is the list of Infiltrated features::
 - **Spawn Command:** You can spawn infiltrated using command.
 - **Kill Command:** You can kill infiltrated using command.
 - **List command:** You can view list of alive infiltrated.
+- **RandomSpawn Command**: You can spawn a random Infiltrated.
+- **PlayerInfo Command**: You can view info of player.
 
+##Required: 
+- Exiled 2.1.35
+- LiteDB 5.0.9.0
 
 ### To do:
 
-Add Multi language support
+Add support for: Scp035 and SerpentHand
+Add spawn item change
 
 ### Config
 
@@ -35,13 +41,19 @@ You can see settings and edit them inside your Exiled config.
 | InfiltratedBroadcast  | Broadcast  | The broadcast to Infiltrated ClassD  |
 | HealthAmount  | int | Health amount of Infiltrated ClassD  |
 | InfiltratedBroadcastDeath  | Broadcast | The broadcast when Infiltrated death |
+| IsDatabaseEnaled  | bool | Enable or disable the Database |
+| DatabaseName | string | The name of the database |
 
 **Commands**
 
 | Commands  | Args | Permission | Description | 
 | ------------- | ------------- | ------------- | ------------- |
-| Infiltrated_spawn / ISpawn  | Player name or ID  | infiltrated.spawn | Spawn Infiltrated |
-| Infiltrated_list / IList  | none  | infiltrated.list | Show the list of alive infiltrated |
-| Infiltrated_kill / IKill  | Player name or ID | infiltrated.kill | Kill alive infiltrated |
+| Infiltrated / if  | view sub-command  | none | show sub-command |
+| Spawn / s  | <player name or id>  | infiltrated.spawn | Spawn an Infiltrated |
+| Kill / k  | <Player name or ID> | infiltrated.kill | Kill alive infiltrated |
+| List / l | none | infiltrated.list | List of alive infiltrated |
+| RandomSpawn / RSpawn | none | infiltrated.randomspawn | Spawn a random infiltrated |
+| PlayerInfo / pi <Player name or id> | infiltrated.playerinfo | Show player info (avariable only if IsDatabaseEnaled is enabled) |
+| Help / h | none | infiltrated.help | Show help command |
 
 If you found bug please contact me on discord: **Twitch.tv/Monaldcry7788#9248** .<br /><br />
