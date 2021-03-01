@@ -17,7 +17,7 @@ This is the list of Infiltrated features::
 - **RandomSpawn Command**: You can spawn a random Infiltrated.
 - **PlayerInfo Command**: You can view info of player.
 
-##Required: 
+### Required: 
 - Exiled 2.1.35
 - LiteDB 5.0.9.0
 
