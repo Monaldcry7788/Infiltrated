@@ -58,3 +58,6 @@ You can see settings and edit them inside your Exiled config.
 | Help / h | none | infiltrated.help | Show help command |
 
 If you found bug please contact me on discord: **Twitch.tv/Monaldcry7788#9248** .<br /><br />
+
+### Downloads
+![img](https://img.shields.io/github/downloads/Monaldcry7788/Infiltrated/total?style=for-the-badge)
