@@ -54,7 +54,7 @@ You can see settings and edit them inside your Exiled config.
 | Kill / k  | Player name or ID | infiltrated.kill | Kill alive infiltrated |
 | List / l | none | infiltrated.list | List of alive infiltrated |
 | RandomSpawn / RSpawn | none | infiltrated.randomspawn | Spawn a random infiltrated |
-| PlayerInfo / pi Player name or id | infiltrated.playerinfo | Show player info (avariable only if IsDatabaseEnaled is enabled) |
+| PlayerInfo / pi | Player name or id | infiltrated.playerinfo | Show player info (avariable only if IsDatabaseEnaled is enabled) |
 | Help / h | none | infiltrated.help | Show help command |
 
 If you found bug please contact me on discord: **Twitch.tv/Monaldcry7788#9248** .<br /><br />
