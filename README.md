@@ -22,11 +22,6 @@ This is the list of Infiltrated features::
 - Exiled 2.1.35
 - LiteDB 5.0.9.0
 
-### To do:
-
-Add support for: Scp035 and SerpentHand
-Add spawn item change
-
 ### Config
 
 You can see settings and edit them inside your Exiled config.
@@ -36,6 +31,8 @@ You can see settings and edit them inside your Exiled config.
 | Name  | Type | Description | 
 | ------------- | ------------- | ------------- |
 | IsEnabled  | bool  | Enable or Disable the plugin |
+| SpawnChance | int | Infiltrated spawn chance |
+| SpawmMinium | int | Minium players to spawn an Infiltrated |
 | InfiltratedItems  | List  | The items Infiltrated spawn with |
 | ClassDBroadcast  | Broadcast  | The broadcast to all ClassD |
 | ClassDSpawnTime  | float  | How soon to spawn Infiltrated after round start  |
@@ -44,6 +41,7 @@ You can see settings and edit them inside your Exiled config.
 | InfiltratedBroadcastDeath  | Broadcast | The broadcast when Infiltrated death |
 | IsDatabaseEnaled  | bool | Enable or disable the Database |
 | DatabaseName | string | The name of the database |
+| IsDebugEnabled | bool | Enable or disable Debug mode |
 
 **Commands**
 
@@ -56,6 +54,11 @@ You can see settings and edit them inside your Exiled config.
 | RandomSpawn / RSpawn | none | infiltrated.randomspawn | Spawn a random infiltrated |
 | PlayerInfo / pi | Player name or id | infiltrated.playerinfo | Show player info (avariable only if IsDatabaseEnaled is enabled) |
 | Help / h | none | infiltrated.help | Show help command |
+
+### API
+- **GetInfiltratedList**: type List<Player>
+- **SpawnInfiltrated**: player
+- **KillInfiltrated**: player
 
 If you found bug please contact me on discord: **Twitch.tv/Monaldcry7788#9248** .<br /><br />
 
