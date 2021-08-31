@@ -3,6 +3,7 @@ using Exiled.Permissions.Extensions;
 using NorthwoodLib.Pools;
 using System;
 using System.Text;
+
 namespace Infiltrated.Commands
 {
     public class Help : ICommand
@@ -11,7 +12,7 @@ namespace Infiltrated.Commands
 
         public string Command { get; } = "help";
 
-        public string[] Aliases { get; } = new[] { "h" };
+        public string[] Aliases { get; } = new[] {"h"};
 
         public string Description { get; } = "Help command";
 
@@ -29,32 +30,28 @@ namespace Infiltrated.Commands
                 return false;
             }
 
-            StringBuilder text = StringBuilderPool.Shared.Rent();
+            var text = StringBuilderPool.Shared.Rent();
             text.AppendLine($"[ADMIN COMMANDS]");
             text.AppendLine($"Spawn Command:")
                 .AppendLine($"Usage: Spawn <player name or id>")
                 .AppendLine($"Permission: infiltrated.spawn")
                 .AppendLine("Description: Spawn an infiltrated")
                 .AppendLine("Alias: s").AppendLine()
-
                 .AppendLine("Kill Command:")
                 .AppendLine("Usage: Kill <player name or id>")
                 .AppendLine("Permission: infiltrated.kill")
                 .AppendLine("Description: Kill an Infiltrated")
                 .AppendLine("Alias: k").AppendLine()
-
                 .AppendLine("List Command")
                 .AppendLine("Usage: List")
                 .AppendLine("Permission: infiltrated.list")
                 .AppendLine("Description: Show list of alives Infiltrated")
                 .AppendLine("Alias: l").AppendLine()
-
                 .AppendLine("InfoPlayer Command:")
                 .AppendLine("Usage: InfoPlayer <player name or id>")
                 .AppendLine("Permission: infiltrated.playerinfo")
                 .AppendLine("Description: show stats of player")
                 .AppendLine("Alias: pi").AppendLine()
-
                 .AppendLine("RandomSpawn Command")
                 .AppendLine("Usage: RandomSpawn")
                 .AppendLine("Permission: infiltrated.randomspawn")

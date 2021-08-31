@@ -9,12 +9,21 @@ namespace Infiltrated
     public class Database
     {
         public static LiteDatabase LiteDatabase { get; private set; }
-        public static string Folder => Path.Combine(Exiled.API.Features.Paths.Plugins, Infiltrated.Singleton.Config.DatabaseName);
+
+        public static string Folder =>
+            Path.Combine(Paths.Plugins, Infiltrated.Singleton.Config.DatabaseName);
+
         public static string FullDir => Path.Combine(Folder, $"{Infiltrated.Singleton.Config.DatabaseName}.db");
 
-        public static Dictionary<Exiled.API.Features.Player, Player> PlayerData = new Dictionary<Exiled.API.Features.Player, Player>();
+        public static Dictionary<Exiled.API.Features.Player, Player> PlayerData =
+            new Dictionary<Exiled.API.Features.Player, Player>();
+
         private readonly Infiltrated plugin;
-        public Database(Infiltrated plugin) => this.plugin = plugin;
+
+        public Database(Infiltrated plugin)
+        {
+            this.plugin = plugin;
+        }
 
         public void CreateDatabase()
         {

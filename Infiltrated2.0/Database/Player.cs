@@ -9,6 +9,5 @@
         public int TotalKill { get; set; }
         public int TotalDeath { get; set; }
         public int TotalShotsFired { get; set; }
-
     }
 }

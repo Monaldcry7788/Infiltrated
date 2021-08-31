@@ -37,41 +37,74 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\DLL\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\Assembly-CSharp-Publicized.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>..\..\DLL\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="CommandSystem.Core">
       <HintPath>..\..\DLL\CommandSystem.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.API">
-      <HintPath>..\..\DLL\Exiled.API.dll</HintPath>
+    <Reference Include="CommandSystem.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\CommandSystem.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CreditTags">
-      <HintPath>..\..\DLL\Exiled.CreditTags.dll</HintPath>
+    <Reference Include="Exiled.API, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\EXILED.3.0.0-alpha.76\lib\net472\Exiled.API.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.Events">
-      <HintPath>..\..\DLL\Exiled.Events.dll</HintPath>
+    <Reference Include="Exiled.Bootstrap, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\EXILED.3.0.0-alpha.76\lib\net472\Exiled.Bootstrap.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.Loader">
-      <HintPath>..\..\DLL\Exiled.Loader.dll</HintPath>
+    <Reference Include="Exiled.CreditTags, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\EXILED.3.0.0-alpha.76\lib\net472\Exiled.CreditTags.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.Permissions">
-      <HintPath>..\..\DLL\Exiled.Permissions.dll</HintPath>
+    <Reference Include="Exiled.CustomItems, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\EXILED.3.0.0-alpha.76\lib\net472\Exiled.CustomItems.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.Updater">
-      <HintPath>..\..\DLL\Exiled.Updater.dll</HintPath>
+    <Reference Include="Exiled.Events, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\EXILED.3.0.0-alpha.76\lib\net472\Exiled.Events.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LiteDB">
-      <HintPath>..\..\DLL\LiteDB.dll</HintPath>
+    <Reference Include="Exiled.Loader, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\EXILED.3.0.0-alpha.76\lib\net472\Exiled.Loader.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Exiled.Permissions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\EXILED.3.0.0-alpha.76\lib\net472\Exiled.Permissions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Exiled.Updater, Version=3.1.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\EXILED.3.0.0-alpha.76\lib\net472\Exiled.Updater.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiteDB, Version=5.0.11.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27">
+      <HintPath>..\packages\LiteDB.5.0.11\lib\net45\LiteDB.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Mirror">
       <HintPath>..\..\DLL\Mirror.dll</HintPath>
     </Reference>
+    <Reference Include="Mirror, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\Mirror.dll</HintPath>
+    </Reference>
     <Reference Include="NorthwoodLib">
       <HintPath>..\..\DLL\NorthwoodLib.dll</HintPath>
     </Reference>
+    <Reference Include="NorthwoodLib, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\NorthwoodLib.dll</HintPath>
+    </Reference>
     <Reference Include="scp035">
       <HintPath>..\..\DLL\scp035.dll</HintPath>
+    </Reference>
+    <Reference Include="Scp035, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\Scp035.dll</HintPath>
     </Reference>
     <Reference Include="SemVer">
       <HintPath>..\..\DLL\SemVer.dll</HintPath>
@@ -79,9 +112,13 @@
     <Reference Include="SerpentsHand">
       <HintPath>..\..\DLL\SerpentsHand.dll</HintPath>
     </Reference>
+    <Reference Include="SerpentsHand, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\SerpentsHand.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -90,8 +127,14 @@
     <Reference Include="UnityEngine">
       <HintPath>..\..\DLL\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\UnityEngine.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\DLL\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Desktop\DLL aggiornati\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="YamlDotNet, Version=9.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -105,6 +148,7 @@
     <Compile Include="Commands\InfoPlayer.cs" />
     <Compile Include="Commands\List.cs" />
     <Compile Include="Commands\RandomSpawn.cs" />
+    <Compile Include="Component\InfiltratedComponent.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Database\Database.cs" />
     <Compile Include="Database\Player.cs" />

@@ -12,7 +12,7 @@ namespace Infiltrated.Commands
 
         public string Command { get; } = "list";
 
-        public string[] Aliases { get; } = new[] { "l" };
+        public string[] Aliases { get; } = new[] {"l"};
 
         public string Description { get; } = "Show list of alives infiltrated";
 
@@ -30,14 +30,13 @@ namespace Infiltrated.Commands
                 return false;
             }
 
-            StringBuilder text = StringBuilderPool.Shared.Rent();
+            var text = StringBuilderPool.Shared.Rent();
             text.AppendLine($"[INFILTRATED ALIVE ({Infiltrated.Singleton.TrackedPlayers.Count})]");
             foreach (var infiltrated in Infiltrated.Singleton.TrackedPlayers)
-            {
                 text.AppendLine($"[Player: {infiltrated.Nickname} ({infiltrated.UserId})]")
                     .AppendLine($"[Player Health: {infiltrated.Health}HP]")
                     .AppendLine($"[Player Role: {infiltrated.Role}]").AppendLine();
-            }
+
             response = StringBuilderPool.Shared.ToStringReturn(text);
             return true;
         }

@@ -1,6 +1,7 @@
 ﻿using CommandSystem;
 using Exiled.Permissions.Extensions;
 using System;
+
 namespace Infiltrated.Commands
 {
     public class Kill : ICommand
@@ -9,7 +10,7 @@ namespace Infiltrated.Commands
 
         public string Command { get; } = "Kill";
 
-        public string[] Aliases { get; } = new[] { "k" };
+        public string[] Aliases { get; } = new[] {"k"};
 
         public string Description { get; } = "Kill an infiltrated";
 
@@ -36,7 +37,7 @@ namespace Infiltrated.Commands
             if (Infiltrated.Singleton.TrackedPlayers.Contains(target))
             {
                 response = $"Player {target.Nickname} has been killed";
-                Infiltrated.Singleton.Logic.Kill(target);
+                Infiltrated.Singleton.api.KillInfiltrated(target);
                 return true;
             }
 

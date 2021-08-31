@@ -12,7 +12,7 @@ namespace Infiltrated.Commands
 
         public string Command { get; } = "InfoPlayer";
 
-        public string[] Aliases { get; } = new[] { "pi" };
+        public string[] Aliases { get; } = new[] {"pi"};
 
         public string Description { get; } = "Show player info";
 
@@ -23,16 +23,13 @@ namespace Infiltrated.Commands
                 response = "<color=red>You can't do this command!</color>";
                 return false;
             }
+
             if (arguments.Count != 1)
             {
                 response = "Usage: InfoPlayer/pi <player name or id>";
                 return false;
             }
-            if (!Infiltrated.Singleton.Config.IsDatabaseEnaled)
-            {
-                response = "The command is disabled because the database has been deactivated from the server config";
-                return false;
-            }
+
             var target = Exiled.API.Features.Player.Get(arguments.At(0));
             var PlayerDB = target.GetPlayerDB();
             if (PlayerDB == null)
@@ -40,7 +37,8 @@ namespace Infiltrated.Commands
                 response = "Player not found";
                 return false;
             }
-            StringBuilder text = StringBuilderPool.Shared.Rent().AppendLine();
+
+            var text = StringBuilderPool.Shared.Rent().AppendLine();
             text.AppendLine($"[Player: {PlayerDB.Name} ({PlayerDB.Id}@{PlayerDB.Auth})]")
                 .AppendLine($"[Total game played as Infiltrated: {PlayerDB.TotalRoundPlayed}]")
                 .AppendLine($"[Total kill as Infiltrated: {PlayerDB.TotalKill}]")
