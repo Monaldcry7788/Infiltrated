@@ -20,7 +20,7 @@ This is the list of Infiltrated features::
 
 ### Required: 
 - Exiled 2.1.35
-- LiteDB 5.0.9.0
+- LiteDB 5.0.11.0
 
 ### Config
 
@@ -39,7 +39,6 @@ You can see settings and edit them inside your Exiled config.
 | InfiltratedBroadcast  | Broadcast  | The broadcast to Infiltrated ClassD  |
 | HealthAmount  | int | Health amount of Infiltrated ClassD  |
 | InfiltratedBroadcastDeath  | Broadcast | The broadcast when Infiltrated death |
-| IsDatabaseEnaled  | bool | Enable or disable the Database |
 | DatabaseName | string | The name of the database |
 | IsDebugEnabled | bool | Enable or disable Debug mode |
 
