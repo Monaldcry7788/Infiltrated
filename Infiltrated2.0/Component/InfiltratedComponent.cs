@@ -65,8 +65,7 @@ namespace Infiltrated
 
             player.Health = player.MaxHealth = Infiltrated.Singleton.Config.HealthAmount;
             player.ResetInventory(Infiltrated.Singleton.Config.InfiltratedItems);
-            player.ClearBroadcasts();
-            player.Broadcast(Infiltrated.Singleton.Config.InfiltratedBroadcast);
+            player.Broadcast(Infiltrated.Singleton.Config.InfiltratedBroadcast.Duration, Infiltrated.Singleton.Config.InfiltratedBroadcast.Content, Broadcast.BroadcastFlags.Normal, true);
             player.GetPlayerDB().TotalRoundPlayed++;
             Database.LiteDatabase.GetCollection<Player>().Update(Database.PlayerData[player]);
         }
