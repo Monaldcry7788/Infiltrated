@@ -39,8 +39,6 @@ namespace Infiltrated
                 /*if (Infiltrated.is035)
                     scp035 = TryGet035();
                 
-                Log.Debug("porco dio1");
-                
                 if (Infiltrated.isSH)
                     sh = TrySH();
                 */
