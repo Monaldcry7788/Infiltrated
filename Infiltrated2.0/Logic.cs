@@ -23,7 +23,6 @@ namespace Infiltrated
         {
             if (Exiled.API.Features.Player.List.Count() >= plugin.Config.SpawnMinium)
             {
-                Log.Debug(random);
                 if (random <= plugin.Config.SpawnChance)
                 {
                     var classd = Exiled.API.Features.Player.List.Where(p => p.Role == RoleType.ClassD && !plugin.TrackedPlayers.Contains(p)).ToList();
